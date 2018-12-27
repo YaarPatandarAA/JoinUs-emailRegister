@@ -1,3 +1,4 @@
+-- Challenge 1
 SELECT
    DATE_FORMAT(created_at, '%M %D %Y') as earliest_date 
 FROM
@@ -5,8 +6,7 @@ FROM
 ORDER BY
    created_at LIMIT 1;
 
-/*  */
-
+-- Challenge 2
 SELECT
    email,
    created_at 
@@ -15,8 +15,7 @@ FROM
 ORDER BY
    created_at LIMIT 1;
 
-/*  */
-
+-- Challenge 3
 SELECT
    DATE_FORMAT(created_at, '%M') as month,
    COUNT(*) as count 
@@ -27,8 +26,7 @@ GROUP BY
 ORDER BY
    count;
 
-/*  */
-
+-- Challenge 4
 SELECT
    count(email) AS yahoo_users
 FROM
@@ -36,8 +34,7 @@ FROM
 WHERE
    email LIKE '%@yahoo.com';
 
-/*  */
-
+-- Challenge 5
 SELECT 
     CASE
         WHEN email LIKE '%@gmail.com' THEN 'gmail' 
