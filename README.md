@@ -12,5 +12,5 @@ Simple Web page to take emails and insert into MySQL database
    * insert initial dummy data, if needed.
 * Go to source directory, where you cloned.
    * Run ```npm install```
-   * Add your own mysql connection data, in app.js
+   * Add your mysql connection data, in app.js
    * Run ```node app.js```
